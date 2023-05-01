@@ -12,23 +12,32 @@ public class MovieController : ControllerBase
     private static int id = 0;
 
     [HttpPost]
-    public void InsertMovie([FromBody] Movie movie)
+    public IActionResult InsertMovie([FromBody] Movie movie)
     {
         movie.Id= id++;
         movies.Add(movie);
-        Console.WriteLine(movie.Title);
+        
+        return CreatedAtAction(
+            nameof(GetMovieById),
+            new { id = movie.Id },
+            movie);
     }
 
     [HttpGet]
-    public IEnumerable<Movie> GetMovie()
+    public IEnumerable<Movie> GetMovie(
+        [FromQuery] int skip = 0, 
+        [FromQuery] int take = 10) //Adicionando o " = x " determinamos um valor default caso não seja passado
     {
-        return movies;
+        return movies.Skip(skip).Take(take);
     }
 
     [HttpGet("{id}")]
-    public Movie? GetMovieById(int id)
+    public IActionResult GetMovieById(int id)
     {
-        return movies.FirstOrDefault(movie => movie.Id.Equals(id));
-    }
+       var film = movies.FirstOrDefault(movie => movie.Id.Equals(id));
 
+        if (film == null) return NotFound();
+
+        return Ok(film);
+    }
 }
