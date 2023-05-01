@@ -1,10 +1,9 @@
 using MovieApi.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
-
 // Add services to the container.
 
-
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddControllers();
 builder.Services.AddDbContextConfig(builder.Configuration);
 builder.Services.AddEndpointsApiExplorer();

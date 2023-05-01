@@ -39,3 +39,5 @@ D:\estudos\.Net\MovieApi\MovieApi\obj\Debug\net6.0\refint\MovieApi.dll
 D:\estudos\.Net\MovieApi\MovieApi\obj\Debug\net6.0\MovieApi.pdb
 D:\estudos\.Net\MovieApi\MovieApi\obj\Debug\net6.0\MovieApi.genruntimeconfig.cache
 D:\estudos\.Net\MovieApi\MovieApi\obj\Debug\net6.0\ref\MovieApi.dll
+D:\estudos\.Net\MovieApi\MovieApi\bin\Debug\net6.0\AutoMapper.dll
+D:\estudos\.Net\MovieApi\MovieApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

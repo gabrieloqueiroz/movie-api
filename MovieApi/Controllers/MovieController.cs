@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using MovieApi.Data;
+using MovieApi.Data.Dtos;
 using MovieApi.Models;
 
 namespace MovieApi.Controllers;
@@ -8,14 +11,21 @@ namespace MovieApi.Controllers;
 public class MovieController : ControllerBase
 {
 
-    private static List<Movie> movies = new List<Movie>();
-    private static int id = 0;
+    private MovieContext _movieContext;
+    private IMapper _mapper;
+
+    public MovieController(MovieContext movieContext, IMapper mapper)
+    {
+        _movieContext = movieContext;
+        _mapper = mapper;
+    }
 
     [HttpPost]
-    public IActionResult InsertMovie([FromBody] Movie movie)
+    public IActionResult InsertMovie([FromBody] CreateMovieDto movieDto)
     {
-        movie.Id= id++;
-        movies.Add(movie);
+        Movie movie = _mapper.Map<Movie>(movieDto);
+        _movieContext.Movies.Add(movie);
+        _movieContext.SaveChanges();
         
         return CreatedAtAction(
             nameof(GetMovieById),
@@ -28,13 +38,16 @@ public class MovieController : ControllerBase
         [FromQuery] int skip = 0, 
         [FromQuery] int take = 10) //Adicionando o " = x " determinamos um valor default caso não seja passado
     {
-        return movies.Skip(skip).Take(take);
+        return _movieContext.Movies.Skip(skip).Take(take);
     }
 
     [HttpGet("{id}")]
     public IActionResult GetMovieById(int id)
     {
-       var film = movies.FirstOrDefault(movie => movie.Id.Equals(id));
+       var film = _movieContext
+            .Movies
+            .FirstOrDefault(movie => 
+                        movie.Id.Equals(id));
 
         if (film == null) return NotFound();
 

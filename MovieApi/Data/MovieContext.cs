@@ -1,13 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MovieApi.Models;
 
-namespace MovieApi.Data
+namespace MovieApi.Data;
+
+public class MovieContext : DbContext
 {
-    public class MovieContext : DbContext
-    {
-        public  MovieContext(DbContextOptions<MovieContext> options) : base(options) { }
+    public  MovieContext(DbContextOptions<MovieContext> options) : base(options) { }
 
-        public DbSet<Movie> Movies { get; set; }
+    public DbSet<Movie> Movies { get; set; }
 
-    }
 }
