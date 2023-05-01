@@ -45,3 +45,5 @@ D:\estudos\.Net\MovieApi\MovieApi\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatc
 D:\estudos\.Net\MovieApi\MovieApi\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\estudos\.Net\MovieApi\MovieApi\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\estudos\.Net\MovieApi\MovieApi\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+D:\estudos\.Net\MovieApi\MovieApi\bin\Debug\net6.0\MovieApi.xml
+D:\estudos\.Net\MovieApi\MovieApi\obj\Debug\net6.0\MovieApi.xml
