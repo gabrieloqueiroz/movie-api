@@ -11,6 +11,8 @@ public class MapperProfile : Profile
     {
         CreateMap<CreateMovieDto, Movie>();
         CreateMap<UpdateMovieDto, Movie>();
+        CreateMap<Movie, UpdateMovieDto>();
+        CreateMap<Movie, ReadMovieDto>();
     }
 
 }
