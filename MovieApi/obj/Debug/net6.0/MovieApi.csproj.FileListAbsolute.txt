@@ -5,7 +5,16 @@ D:\estudos\.Net\MovieApi\MovieApi\bin\Debug\net6.0\MovieApi.deps.json
 D:\estudos\.Net\MovieApi\MovieApi\bin\Debug\net6.0\MovieApi.runtimeconfig.json
 D:\estudos\.Net\MovieApi\MovieApi\bin\Debug\net6.0\MovieApi.dll
 D:\estudos\.Net\MovieApi\MovieApi\bin\Debug\net6.0\MovieApi.pdb
+D:\estudos\.Net\MovieApi\MovieApi\bin\Debug\net6.0\Humanizer.dll
+D:\estudos\.Net\MovieApi\MovieApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\estudos\.Net\MovieApi\MovieApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\estudos\.Net\MovieApi\MovieApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\estudos\.Net\MovieApi\MovieApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\estudos\.Net\MovieApi\MovieApi\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\estudos\.Net\MovieApi\MovieApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
 D:\estudos\.Net\MovieApi\MovieApi\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\estudos\.Net\MovieApi\MovieApi\bin\Debug\net6.0\MySqlConnector.dll
+D:\estudos\.Net\MovieApi\MovieApi\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
 D:\estudos\.Net\MovieApi\MovieApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\estudos\.Net\MovieApi\MovieApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\estudos\.Net\MovieApi\MovieApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
