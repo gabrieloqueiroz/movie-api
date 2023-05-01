@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Data\Dtos\CreateMovieDto - Copy %282%29.cs" />
     <Compile Remove="Data\Dtos\CreateMovieDto - Copy.cs" />
   </ItemGroup>
 

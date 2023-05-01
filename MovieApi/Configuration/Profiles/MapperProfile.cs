@@ -10,6 +10,7 @@ public class MapperProfile : Profile
     public MapperProfile() 
     {
         CreateMap<CreateMovieDto, Movie>();
+        CreateMap<UpdateMovieDto, Movie>();
     }
 
 }
